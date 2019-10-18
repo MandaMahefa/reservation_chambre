@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.drawer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Resevation chambre"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".VisualizeClientActivity"
+            android:label="Details clients"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AllFolderActivity"
+            android:label="Tous les dossiers"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddDossierActivity"
+            android:label="Ajouter un dossier"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AjoutProjetActivity"
+            android:label="Ajouter un projet"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllProjectActivity"
+            android:label="Tous les projets"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddContactActivity"
+            android:label="Ajouter un contact"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllContactActivity"
+            android:label="Tous les contacts"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllClientActivity"
+            android:label="Tous les clients"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddClientActivity"
+            android:label="Ajout client"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Journal1Activity"
+            android:label="@string/title_activity_journal"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllUserActivity"
+            android:label="Listes utilisateurs"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddUserActivity"
+            android:label="Ajout un utilisateur"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JournalActivity"
+            android:label="@string/title_activity_journal"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name=".LostPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DialogDashboardSateActivity" />
+        <activity
+            android:name=".AllNotificationActivity"
+            android:label="Mes notifications reçues"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <!--<activity
+            android:name=".AddTaskActivity"
+            android:label="Ajouter une tâche"
+            android:parentActivityName=".TaskInProjectActivity"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Mes informations"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddTaskActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Tableau de bord"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TaskInProjectActivity"
+            android:label="Listes des tâches"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaskDetailActivity"
+            android:label="Details"
+            android:parentActivityName=".TaskInProjectActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

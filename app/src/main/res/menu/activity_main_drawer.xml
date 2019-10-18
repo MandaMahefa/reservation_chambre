@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/dashboard"
+            android:title="Dashboard"
+            android:orderInCategory="1"/>
+        <item
+            android:id="@+id/admin_users"
+            android:visible="false"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Gestion des utilisateurs"
+            app:itemTextColor="#ffffff"
+            app:actionLayout="@layout/menu_switch"
+            app:showAsAction="always"
+            android:orderInCategory="2">
+            <menu>
+                <item
+                    android:id="@+id/list_users"
+                    android:title="Listes des utilisateurs"
+                    android:icon="@drawable/dry"
+                    />
+                <item
+                    android:id="@+id/add_user"
+                    android:title="Ajouter un utilisateur"
+                    android:icon="@drawable/dry"
+                    />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/all_clients"
+            android:visible="false"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Gestion des clients"
+            app:itemTextColor="#ffffff"
+            app:actionViewClass="android.widget.Switch"
+            android:orderInCategory="3">
+            <menu>
+                <item
+                    android:id="@+id/list_clients"
+                    android:title="Listes des clients"
+                    android:icon="@drawable/dry"
+                    />
+                <item
+                    android:id="@+id/add_client"
+                    android:title="Ajouter un client"
+                    android:icon="@drawable/dry"
+                    />
+                <item
+                    android:id="@+id/all_contact"
+                    android:title="Listes des contacts"
+                    android:icon="@drawable/dry"
+                    />
+                <item
+                    android:id="@+id/add_contact"
+                    android:title="Ajouter un contact"
+                    android:icon="@drawable/dry"
+                    />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/admin_projets"
+            android:visible="false"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Gestion des projets"
+            app:itemTextColor="#ffffff"
+            app:actionViewClass="android.widget.Switch"
+            android:orderInCategory="4">
+            <menu>
+                <item
+                    android:id="@+id/all_projets"
+                    android:title="Listes des projets"
+                    android:icon="@drawable/dry"
+                    />
+                <item
+                    android:id="@+id/add_project"
+                    android:title="Ajouter un projet"
+                    android:icon="@drawable/dry"
+                    />
+                <item
+                    android:id="@+id/gestion_des_dossiers"
+                    android:title="Gestion des dossiers"
+                    android:icon="@drawable/dry"
+                    />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/admin_tasks"
+            android:visible="false"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="Tous les tâches"
+            android:orderInCategory="5"/>
+        <item
+            android:id="@+id/nav_journal"
+            android:visible="false"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="Journal"
+            android:orderInCategory="6"/>
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" android:padding="0dp">
+            <solid android:color="#99cc33" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_center_view_24dp"
+        android:adjustViewBounds="false"
+        android:gravity="center"/>
+</layer-list>

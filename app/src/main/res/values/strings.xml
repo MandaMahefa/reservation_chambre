@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">CRM Espaiweb</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="country_prompt">status</string>
+
+    <string-array name="country_arrays">
+        <item>En cours (4)</item>
+        <item>Annulees (0) </item>
+        <item>En attente (2)</item>
+        <item>A tester (1)</item>
+        <item>En brouillon(0)</item>
+        <item>A gérer(3)</item>
+        <item>Résolue(0)</item>
+        <item>A traiter(8)</item>
+    </string-array>
+
+    <string-array name="degree">
+        <item>Urgent</item>
+        <item> A faire dès que possible</item>
+        <item> A faire </item>
+    </string-array>
+
+    <string name="dialog_tsak_status">Status du tâche</string>
+    <string-array name="dialog_tsak">
+        <item>En cours</item>
+        <item>Annulée</item>
+        <item>En attente </item>
+        <item>À tester</item>
+        <item>Résolue</item>
+        <item>À gérer</item>
+        <item>À traiter</item>
+    </string-array>
+
+    <string-array name="state_addtask">
+        <item>Simple </item>
+        <item>Double</item>
+        <item>VIP</item>
+    </string-array>
+
+    <string-array name="groupe_user">
+        <item>Admin </item>
+        <item>Dev</item>
+        <item>Client</item>
+    </string-array>
+
+    <string-array name="etat_projet">
+        <item>Inactif</item>
+        <item>En cours </item>
+        <item>Archivé</item>
+    </string-array>
+
+    <string-array name="projet_perso">
+        <item>Oui </item>
+        <item>Non</item>
+    </string-array>
+
+    <string-array name="contact_add_client">
+        <item>Aucun selection </item>
+        <item>Client</item>
+        <item>test dev</item>
+    </string-array>
+
+    <string-array name="intervenant_assignes">
+        <item>Claude Chailet</item>
+        <item>Manda Ramahefanimanana</item>
+        <item>Mickael Rakoto</item>
+    </string-array>
+    <string name="title_activity_journal">JournalActivity</string>
+</resources>

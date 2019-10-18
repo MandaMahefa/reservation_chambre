@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTaskActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView_addtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear_detail_task"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="0dp">
+
+                <TextView
+                    android:id="@+id/title_current_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Listes des reservation"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#444"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="26dp"
+                    android:layout_marginBottom="15dp"/>
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/tableLayout_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ffffff"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/segment2">
+
+                    <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/TextView_sujet"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dip"
+                        android:text="Reservation"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TextView_intervenant"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dip"
+                        android:text="Debut"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TextView_created"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dip"
+                        android:text="Fin"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dip"
+                        android:text="Client"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                        <TextView
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_width="0dip"
+                            android:padding="20dip"
+                            android:text="Etat"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+
+                </TableRow>
+
+                </TableLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="40dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/textview_create_folder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:padding="0dp"
+                        android:text="Nom du reservation"
+                        android:textColor="#444"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_folder_black"
+                            android:layout_gravity="center"/>
+                        <EditText
+                            android:id="@+id/nom_reservation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#d9e5f3"
+                            android:layout_marginLeft="15dp"
+                            android:background="#ffffff"
+                            android:textSize="16dp"
+                            android:textColor="#000000"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#4a5a71"></LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#4a5a71"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type reservation"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#444"
+                        android:textStyle="bold"
+                        android:padding="0dp"
+                        android:textSize="14dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_error_black"
+                            android:layout_gravity="center"/>
+                        <Spinner
+                            android:id="@+id/spinner_etat_reservation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#d9e5f3"
+                            android:layout_marginLeft="15dp"
+                            android:background="#00000000"
+                            android:entries="@array/state_addtask"
+                            android:textSize="16dp"
+                            android:textColor="#fff"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#4a5a71"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nom du client"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#444"
+                        android:textStyle="bold"
+                        android:padding="0dp"
+                        android:textSize="14dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_error_black"
+                            android:layout_gravity="center"/>
+                        <EditText
+                            android:id="@+id/nom_client"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="#d9e5f3"
+                            android:layout_marginLeft="15dp"
+                            android:background="#ffffff"
+                            android:textSize="16dp"
+                            android:textColor="#000000"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#4a5a71"></LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Debut"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#444"
+                        android:textStyle="bold"
+                        android:padding="0dp"
+                        android:textSize="14dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_library_books_black"
+                            android:layout_gravity="center"/>
+                        <EditText
+                            android:id="@+id/debut_reservation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Sujet de la tâche"
+                            android:textColorHint="#d9e5f3"
+                            android:layout_marginLeft="15dp"
+                            android:background="#ffffff"
+                            android:inputType="text"
+                            android:textSize="16dp"
+                            android:textColor="#000000"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#4a5a71"></LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fin"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#444"
+                        android:textStyle="bold"
+                        android:padding="0dp"
+                        android:textSize="14dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_local_library_black"
+                            android:layout_gravity="center"/>
+                        <EditText
+                            android:id="@+id/fin_reservation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Description tache"
+                            android:textColorHint="#d9e5f3"
+                            android:inputType="textMultiLine"
+                            android:layout_marginLeft="15dp"
+                            android:background="#00000000"
+                            android:textSize="16dp"
+                            android:scrollbars="vertical"
+                            android:textColor="#000000"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#4a5a71"></LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/btn_save_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/btnsavestyle"
+                    android:drawableStart="@drawable/ic_check_circle_black"
+                    android:drawableTint="#fff"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Enregistrer la reservation"
+                    android:textColor="#d9e5f3"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
